@@ -1,5 +1,6 @@
 
-function calculateFinalScore(obj) {if (typeof obj !== "object") {
+function calculateFinalScore(obj)   {
+    if (typeof obj !== "object") {
         return "Invalid Input"
     }
     const totalMarks = obj.testScore + obj.schoolGrade;

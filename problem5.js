@@ -1,14 +1,14 @@
-function waitingTime(array, number) {
-    if (!Array.isArray(array) || typeof number !== 'number') {
+function  waitingTime(waitingTimes  , serialNumber) {
+    if (!Array.isArray(waitingTimes) || typeof serialNumber !== 'number') {
         return "Invalid Input"
     }
     let sum = 0;
-    for (let arr of array) {
+    for (let arr of waitingTimes) {
         sum = sum + arr;
     }
-    const arrayLength = array.length
+    const arrayLength =waitingTimes.length
     const avgSum = Math.round(sum / arrayLength);
-    const beforeIsratNumber = number - 1;
+    const beforeIsratNumber = serialNumber - 1;
     const afterIsratNumber = beforeIsratNumber - arrayLength;
     const result = afterIsratNumber > 0 ? afterIsratNumber *  avgSum : 0;
     return result;

@@ -1,4 +1,4 @@
-function sendNotification(email) {
+function sendNotification(email)   {
     if (typeof email !== "string") {
         return "Invalid Email"
     }
