@@ -7,21 +7,21 @@ function calculateTex(income, expense) {
     }
     else {
         const z = income - expense;
-       const withOutText = z * .20;
+        const withOutText = z * .20;
         return withOutText;
     }
 }
-// let x = 6000;
-// let y = -1500;
+
 const m = calculateTex(10000, 3000);
 const n = calculateTex(34000, 1753);
 const o = calculateTex(5000, 1500);
 const m2 = calculateTex(7000, 7000);
 const n2 = calculateTex(-5000, 2000);
 const o2 = calculateTex(6000, -1500);
-console.log(m);
-console.log(n);
-console.log(o);
-console.log(m2);
-console.log(n2);
-console.log(o2);
+
+console.log(m); //output- 1400
+console.log(n); //output- 6449.400000000001
+console.log(o); //output- 700
+console.log(m2); //output- 0
+console.log(n2); //output- Invalid Input
+console.log(o2); //output- Invalid Input

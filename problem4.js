@@ -21,7 +21,8 @@ const x = calculateFinalScore(person1);
 const y = calculateFinalScore(person2);
 const z = calculateFinalScore(person3);
 const u = calculateFinalScore(person4);
-console.log(x);
-console.log(y);
-console.log(z);
-console.log(u);
+
+console.log(x); //output- true
+console.log(y); //output- false
+console.log(z); //output- Invalid Input
+console.log(u); //output- false
